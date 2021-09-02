@@ -1,0 +1,26 @@
+Source: onevpl-intel-gpu
+Section: utils
+Priority: optional
+Maintainer: intel one ubuntu  <intel.one.ubuntu.account@intel.com>
+Uploaders:
+ Lee Chee Yang <chee.yang.lee@intel.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake (>= 3.14),
+ pkg-config,
+ libdrm-dev,
+ libva-dev,
+ libigfxcmrt-dev,
+ onevpl (>= 2021.5.0)
+Standards-Version: 4.5.1
+Homepage: https://github.com/oneapi-src/oneVPL-intel-gpu 
+Rules-Requires-Root: no
+
+Package: onevpl-intel-gpu
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Intel® oneVPL GPU Runtime is a Runtime implementation of oneVPL API
+ for Intel Gen GPUs. Runtime provides access to hardware-accelerated video 
+ decode, encode and filtering. 
