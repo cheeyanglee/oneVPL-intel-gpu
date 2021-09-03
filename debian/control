@@ -23,4 +23,18 @@ Depends:
  ${shlibs:Depends}
 Description: Intel® oneVPL GPU Runtime is a Runtime implementation of oneVPL API
  for Intel Gen GPUs. Runtime provides access to hardware-accelerated video 
- decode, encode and filtering. 
+ decode, encode and filtering.
+ .
+ This package provides the runtime environment for onevpl-intel-gpu.
+
+Package: onevpl-intel-gpu-tools
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Intel® oneVPL GPU Runtime is a Runtime implementation of oneVPL API
+ for Intel Gen GPUs. Runtime provides access to hardware-accelerated video
+ decode, encode and filtering.
+ .
+ This package provides the tools for onevpl-intel-gpu.
+ 
